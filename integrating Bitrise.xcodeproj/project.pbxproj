@@ -13,6 +13,8 @@
 		D38C22E32CC98940000B45F0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D38C22E22CC98940000B45F0 /* Base */; };
 		D38C22E52CC98942000B45F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D38C22E42CC98942000B45F0 /* Assets.xcassets */; };
 		D38C22E82CC98942000B45F0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D38C22E72CC98942000B45F0 /* Base */; };
+		D38C22F12CC993CE000B45F0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D38C22F02CC993CE000B45F0 /* SnapKit */; };
+		D38C22F32CCA7066000B45F0 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38C22F22CCA7066000B45F0 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		D38C22E42CC98942000B45F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D38C22E72CC98942000B45F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D38C22E92CC98942000B45F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D38C22F22CCA7066000B45F0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D38C22F12CC993CE000B45F0 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 				D38C22DB2CC98940000B45F0 /* AppDelegate.swift */,
 				D38C22DD2CC98940000B45F0 /* SceneDelegate.swift */,
 				D38C22DF2CC98940000B45F0 /* ViewController.swift */,
+				D38C22F22CCA7066000B45F0 /* ViewModel.swift */,
 				D38C22E12CC98940000B45F0 /* Main.storyboard */,
 				D38C22E42CC98942000B45F0 /* Assets.xcassets */,
 				D38C22E62CC98942000B45F0 /* LaunchScreen.storyboard */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = "integrating Bitrise";
+			packageProductDependencies = (
+				D38C22F02CC993CE000B45F0 /* SnapKit */,
+			);
 			productName = "integrating Bitrise";
 			productReference = D38C22D82CC98940000B45F0 /* integrating Bitrise.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = D38C22CF2CC98940000B45F0;
+			packageReferences = (
+				D38C22EF2CC993CE000B45F0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = D38C22D92CC98940000B45F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +151,7 @@
 			files = (
 				D38C22E02CC98940000B45F0 /* ViewController.swift in Sources */,
 				D38C22DC2CC98940000B45F0 /* AppDelegate.swift in Sources */,
+				D38C22F32CCA7066000B45F0 /* ViewModel.swift in Sources */,
 				D38C22DE2CC98940000B45F0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +375,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D38C22EF2CC993CE000B45F0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D38C22F02CC993CE000B45F0 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D38C22EF2CC993CE000B45F0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D38C22D02CC98940000B45F0 /* Project object */;
 }
