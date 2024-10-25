@@ -21,7 +21,7 @@ class ExampleViewModelSpec: QuickSpec {
             viewModel = ViewModel()
         }
 
-        describe("numbersGreaterThanFifteen") {
+        describe("numbersGreaterThanFifteen") { // testing number function
             it("returns numbers greater than 15") {
                 let numbers = [10, 20, 30, 5]
                 let result = viewModel.numbersGreaterThanFifteen(from: numbers)
