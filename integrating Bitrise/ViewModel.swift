@@ -10,34 +10,19 @@ import Combine
 
 final class ViewModel {
     
-//     
     
-//    var numbers = [1, 3, 5, 7, 9, 13, 5, 8]
+    @Published var filteredNumbers: [Int] = []
+    private let dataProvider: NumberDataProvider
     
-//     var listNames = ["Jonh", "Conor", "Conan", "Logan", "Slater", "Linces", "Camilla" ]
+    init(dataProvider: NumberDataProvider) {
+        self.dataProvider = dataProvider
+        filterNumbers()
+    }
     
+    private func filterNumbers() {
+        filteredNumbers = dataProvider.numbers.filter { $0 > 15 }
+    }
     
-    //testing...
-    
-
-        @Published var filteredNumbers: [Int] = []
-        private let dataProvider: NumberDataProvider
-
-        init(dataProvider: NumberDataProvider) {
-            self.dataProvider = dataProvider
-            filterNumbers()
-        }
-
-        private func filterNumbers() {
-            filteredNumbers = dataProvider.numbers.filter { $0 > 15 }
-        }
-    
-     
-//    func numbersGreaterThanFifteen(from numbers: [Int]) -> [Int] {
-//        return numbers.filter { $0 > 15 }
-//    }
-    
-   
     func stringsStartingWithC(from strings: [String]) -> [String] {
         return strings.filter { $0.hasPrefix("C") }
     }
