@@ -12,15 +12,24 @@ final class ViewModel {
     
     
     @Published var filteredNumbers: [Int] = []
-    private let dataProvider: NumberDataProvider
+    @Published var filteredStrings: [String] = []
     
-    init(dataProvider: NumberDataProvider) {
-        self.dataProvider = dataProvider
+    private let numberProvider: NumberDataProvider
+    private let stringProvider: StringDataProvider
+    
+    init(numberProvider: NumberDataProvider, stringProvider: StringDataProvider) {
+        self.numberProvider = numberProvider
+        self.stringProvider = stringProvider
         filterNumbers()
+        filterStrings()
     }
     
     private func filterNumbers() {
-        filteredNumbers = dataProvider.numbers.filter { $0 > 15 }
+        filteredNumbers = numberProvider.numbers.filter { $0 > 15 }
+    }
+    
+    private func filterStrings() {
+        filteredStrings = stringProvider.strings.filter { $0.hasPrefix("C") }
     }
     
     func stringsStartingWithC(from strings: [String]) -> [String] {
@@ -45,3 +54,14 @@ class DefaultNumberDataProvider: NumberDataProvider {
     }
 }
 
+protocol StringDataProvider {
+    var strings: [String] { get }
+}
+
+class DefaultStringDataProvider: StringDataProvider {
+    var strings: [String]
+    
+    init(strings: [String] = ["Logan", "Slater", "Katie", "Conan", "Carol"]) {
+        self.strings = strings
+    }
+}
