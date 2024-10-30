@@ -10,7 +10,6 @@ import Combine
 
 final class ViewModel {
     
-    
     @Published var filteredNumbers: [Int] = []
     @Published var filteredStrings: [String] = []
     
@@ -32,9 +31,9 @@ final class ViewModel {
         filteredStrings = stringProvider.strings.filter { $0.hasPrefix("C") }
     }
     
-    func stringsStartingWithC(from strings: [String]) -> [String] {
-        return strings.filter { $0.hasPrefix("C") }
-    }
+//    func stringsStartingWithC(from strings: [String]) -> [String] {
+//        return strings.filter { $0.hasPrefix("C") }
+//    }
     
 }
 
