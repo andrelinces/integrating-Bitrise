@@ -48,7 +48,7 @@ class ExampleViewControllerSpec: QuickSpec {
         
         describe("ViewController receiving ViewModel values") {
             context("when numbers are provided") {
-                it("should contain some numbers") {
+                it("should contain empty array") {
                     var receivedNumbers: [Int] = []
                     
                     viewController.$displayedNumbers
@@ -72,42 +72,36 @@ class ExampleViewControllerSpec: QuickSpec {
                     expect(receivedNumbers).toEventually(allPass { $0! > 15 })
                 }
             }
-        
-        
-        //testing....
-        
-        
-//        describe("viewController with filtered data") {
-//            it("displays numbers greater than 15") {
-//                var receivedNumbers: [Int] = []
-//                
-//                // Subscribe to displayedNumbers in the viewController
-//                viewController.$displayedNumbers
-//                    .sink { numbers in
-//                        receivedNumbers = numbers
-//                    }
-//                    .store(in: &cancellables)
-//
-//                expect(receivedNumbers).toEventuallyNot(beEmpty())
-//                expect(receivedNumbers).toEventually(allPass { $0! > 15 })
-//                
-//                print("receivedNumbers: \(receivedNumbers)")
-//            }
-
+    
             
-            
-            it("displays strings that start with 'C'") {
-                var receivedStrings: [String] = []
-                
-                // Subscribe to displayedStrings in the viewController
-                viewController.$displayedStrings
-                    .sink { strings in
-                        receivedStrings = strings
+            describe("ViewController receiving ViewModel values") {
+                context("when strings are provided") {
+                    it("displays strings that start with 'C'") {
+                        var receivedStrings: [String] = []
+                        
+                        // Subscribe to displayedStrings in the viewController
+                        viewController.$displayedStrings
+                            .sink { strings in
+                                receivedStrings = strings
+                            }
+                            .store(in: &cancellables)
+                        expect(receivedStrings).toEventuallyNot(beEmpty())
+                        print("receivedStrings1: \(receivedStrings)")
                     }
-                    .store(in: &cancellables)
-                expect(receivedStrings).toEventuallyNot(beEmpty())
-                expect(receivedStrings).toEventually(allPass { $0?.hasPrefix("C") == true })
-                print("receivedStrings: \(receivedStrings)")
+                    
+                    it("displays strings that start with 'C'") {
+                        var receivedStrings: [String] = []
+                        
+                        // Subscribe to displayedStrings in the viewController
+                        viewController.$displayedStrings
+                            .sink { strings in
+                                receivedStrings = strings
+                            }
+                            .store(in: &cancellables)
+                        expect(receivedStrings).toEventually(allPass { $0?.hasPrefix("C") == true })
+                        print("receivedStrings2: \(receivedStrings)")
+                    }
+                }
             }
         }
     }
