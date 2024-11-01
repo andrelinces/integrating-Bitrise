@@ -31,7 +31,6 @@ class ViewController: UIViewController {
             super.init(coder: coder)
         }
    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,8 +38,7 @@ class ViewController: UIViewController {
 
     }
    
-    private func bindViewModel() {
-        
+    private func bindViewModel() { /// Function to receive values ​​from search lists of numbers and strings.
         viewModel.$filteredNumbers
             .sink { [weak self] numbers in
                 self?.displayedNumbers = numbers
