@@ -51,3 +51,5 @@ class ViewController: UIViewController {
             }.store(in: &cancellables)
     }
 }
+
+// Checking about the differences between MVVM-C vs MVVM-R.
