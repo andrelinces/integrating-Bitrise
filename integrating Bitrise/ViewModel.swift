@@ -60,3 +60,5 @@ class DefaultStringDataProvider: StringDataProvider {
         self.strings = strings
     }
 }
+
+// Refactor code.
