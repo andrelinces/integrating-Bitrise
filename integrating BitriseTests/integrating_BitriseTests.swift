@@ -38,7 +38,7 @@ class ExampleViewControllerSpec: QuickSpec {
             _ = viewController.view
         }
 
-        afterEach {
+        afterEach { // Removing values ​​from all variables, clearing memory.
                     cancellables.removeAll()
             viewModel = nil
             viewController = nil
@@ -106,7 +106,6 @@ class ExampleViewControllerSpec: QuickSpec {
         }
     }
 }
-
 
 
 //MARK: - MOCK NumberDataProvider
