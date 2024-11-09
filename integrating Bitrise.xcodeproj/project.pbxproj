@@ -19,6 +19,7 @@
 		D38C23012CCA85C7000B45F0 /* integrating_BitriseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38C23002CCA85C7000B45F0 /* integrating_BitriseTests.swift */; };
 		D3E73DA72CCB11E300B2DDB3 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = D3E73DA62CCB11E300B2DDB3 /* Quick */; };
 		D3E73DAA2CCB12BC00B2DDB3 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = D3E73DA92CCB12BC00B2DDB3 /* Nimble */; };
+		D3E73DAD2CE011EC00B2DDB3 /* Calculations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D3E73DAB2CE011EB00B2DDB3 /* Calculations.xcdatamodeld */; };
 		D5BC0B15A7ACBDC932EA03D9 /* Pods_integrating_Bitrise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F99AA19F909A587ECA55371 /* Pods_integrating_Bitrise.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		D38C22F22CCA7066000B45F0 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		D38C22FE2CCA85C6000B45F0 /* integrating BitriseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "integrating BitriseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38C23002CCA85C7000B45F0 /* integrating_BitriseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = integrating_BitriseTests.swift; sourceTree = "<group>"; };
+		D3E73DAC2CE011EC00B2DDB3 /* Calculations.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Calculations.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		D38C22CF2CC98940000B45F0 = {
 			isa = PBXGroup;
 			children = (
+				D3E73DAB2CE011EB00B2DDB3 /* Calculations.xcdatamodeld */,
 				D38C22DA2CC98940000B45F0 /* integrating Bitrise */,
 				D38C22FF2CCA85C7000B45F0 /* integrating BitriseTests */,
 				D38C22D92CC98940000B45F0 /* Products */,
@@ -301,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D38C22E02CC98940000B45F0 /* ViewController.swift in Sources */,
+				D3E73DAD2CE011EC00B2DDB3 /* Calculations.xcdatamodeld in Sources */,
 				D38C22DC2CC98940000B45F0 /* AppDelegate.swift in Sources */,
 				D38C22F32CCA7066000B45F0 /* ViewModel.swift in Sources */,
 				D38C22DE2CC98940000B45F0 /* SceneDelegate.swift in Sources */,
@@ -636,6 +640,20 @@
 			productName = Nimble;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		D3E73DAB2CE011EB00B2DDB3 /* Calculations.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D3E73DAC2CE011EC00B2DDB3 /* Calculations.xcdatamodel */,
+			);
+			currentVersion = D3E73DAC2CE011EC00B2DDB3 /* Calculations.xcdatamodel */;
+			name = Calculations.xcdatamodeld;
+			path = "/Users/andrelinces/Documents/Projetos_iOS/integrating Bitrise/Calculations.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D38C22D02CC98940000B45F0 /* Project object */;
 }
