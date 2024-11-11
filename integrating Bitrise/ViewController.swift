@@ -55,3 +55,4 @@ class ViewController: UIViewController {
 // Checking about the differences between MVVM-C vs MVVM-R.
 // Refactor code.
 // Studying Core data.
+// Checking about GCD
