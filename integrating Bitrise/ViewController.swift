@@ -56,3 +56,4 @@ class ViewController: UIViewController {
 // Refactor code.
 // Studying Core data.
 // Checking about GCD
+// Studying natural language processing (NLP) - (iOS Machine Learning)
