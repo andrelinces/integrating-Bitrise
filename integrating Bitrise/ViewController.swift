@@ -57,3 +57,4 @@ class ViewController: UIViewController {
 // Studying Core data.
 // Checking about GCD
 // Studying natural language processing (NLP) - (iOS Machine Learning)
+// Checking about OpenAI.
