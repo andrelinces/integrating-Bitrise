@@ -58,3 +58,4 @@ class ViewController: UIViewController {
 // Checking about GCD
 // Studying natural language processing (NLP) - (iOS Machine Learning)
 // Checking about OpenAI.
+// Checking about OpenAI + React Native
