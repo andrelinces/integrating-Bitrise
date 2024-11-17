@@ -59,3 +59,4 @@ class ViewController: UIViewController {
 // Studying natural language processing (NLP) - (iOS Machine Learning)
 // Checking about OpenAI.
 // Checking about OpenAI + React Native
+// Test Exercises.
