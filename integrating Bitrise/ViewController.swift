@@ -60,3 +60,4 @@ class ViewController: UIViewController {
 // Checking about OpenAI.
 // Checking about OpenAI + React Native
 // Test Exercises.
+// 2 - What is a dispatch barrier.
