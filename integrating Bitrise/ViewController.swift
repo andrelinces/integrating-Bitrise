@@ -62,3 +62,4 @@ class ViewController: UIViewController {
 // Test Exercises.
 // 2 - What is a dispatch barrier.
 // React native course.
+// Cheking course error.
