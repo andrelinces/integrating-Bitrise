@@ -63,3 +63,4 @@ class ViewController: UIViewController {
 // 2 - What is a dispatch barrier.
 // React native course.
 // Cheking course error.
+// I changed the course to react native without openAI.
