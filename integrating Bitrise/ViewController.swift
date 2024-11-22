@@ -64,3 +64,4 @@ class ViewController: UIViewController {
 // React native course.
 // Cheking course error.
 // I changed the course to react native without openAI.
+// Checking run the React Native project locally.
